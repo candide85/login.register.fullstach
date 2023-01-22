@@ -11,3 +11,17 @@ function validationLogin(){
     }
 }
 
+
+function validationRegister(){
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const fname = document.getElementById("f-name").value;
+    const lname = document.getElementById("l-name").value;
+
+    if(email === "" || password === ""  || fname === "" || lname === ""){
+        alert("fill all the field before submitting")
+    }else{        
+        alert("Register successfully");
+    }
+}
+
