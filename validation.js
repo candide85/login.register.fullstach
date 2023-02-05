@@ -3,7 +3,7 @@ function validationLogin(){
     const email = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    if(email === "test@gmail.com" && password === "pass@111"){        
+    if(email === localStorage.getItem("email") && password === localStorage.getItem("password")){        
         
         alert("You are Login");
     }else{
@@ -15,12 +15,14 @@ function validationLogin(){
 function validationRegister(){
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
+    const emailStore = localStorage.setItem("email",email)
+    const passwordStore = localStorage.setItem("password",password) 
     const fname = document.getElementById("fname").value;
     const lname = document.getElementById("lname").value;
 
     if(email === "" || password === ""  || fname === "" || lname === ""){
         alert("fill all the field before submitting")
-    }else{        
+    }else{                
         alert("Register successfully");
         
     }

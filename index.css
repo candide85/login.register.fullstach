@@ -54,6 +54,7 @@ body {
     border: none;
     box-shadow: 2px 2px 2px 1px;
     font-size: 18px;
+    cursor: pointer;
 }
 
 #main #left {
@@ -75,6 +76,7 @@ body {
 #main #right p>span {
     color: #F9A65A;
     font-weight: bold;
+    cursor: pointer
 }
 
 #main #right {
@@ -120,6 +122,7 @@ body {
     color: white;
     font-size: 16px;
     border: none;
+    cursor: pointer;
 }
 
 
@@ -155,6 +158,7 @@ body {
         height: 60px;
         width: 600px;
         font-size: 35px;
+        cursor: pointer;
     }
 }
 
