@@ -1,77 +1,126 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
+    background: white;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(images/apart.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-
 }
 
-#form .main-input input {
-    width: 400px;
-    height: 22px;
-    border-radius: 5px;
-    border: 1px solid black;
-    padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-indent: 8px;
-    outline: none;
+#main {
+    border: 2px solid black;
+    width: 85%;
+    height: 90vh;
+    display: flex;
+    background: white;
 }
 
+#main #left h2 {
 
-#form .main-input label {
+    font-size: 25px;
+}
+
+#main #left h3 {
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+#main #left h5 {
+    color: white;
+    font-size: 18px;
+}
+
+#main #left p {
+    color: white;
+    border: 1px solid white;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    margin-top: 20px;
 
 }
 
-
-#form h2 {
-    color: rgb(255, 255, 255);
-    font-size: 40px;
+#main #left button {
+    margin-top: 25px;
+    width: 150px;
+    height: 45px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px;
+    font-size: 18px;
 }
 
-
-#form {
-    background: rgba(45, 19, 4, 0.8);
-    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
-    height: 80%;
-    padding: 25px;
+#main #left {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    border-radius: 10% 5px 10% 5px;
-    border: 1px solid white;
-
+    align-items: center;
+    background: #F9A65A;
+    width: 45%;
 }
 
-
-
-#form #submit {
-    width: 410px;
-    height: 30px;
-    margin-top: 50px;
-    border-radius: 8px;
-    border: none;
-    font-size: 16px;
+#main #right #text1 {
+    color: #F9A65A;
     font-weight: bold;
-    cursor: pointer;
-    background: rgb(154, 80, 19);
-    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#main #right p>span {
+    color: #F9A65A;
+    font-weight: bold;
+}
+
+#main #right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    width: 55%;
 }
 
 
+#main #right {
+    background: white;
+
+}
+
+#main #right h1 {
+    font-size: 45px;
+}
+
+#main #right #form {
+    display: flex;
+    flex-direction: column;
+}
+
+#main #right #form input {
+    border: 1px solid #F9A65A;
+
+    text-indent: 40px;
+    width: 350px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+#main #right #form button {
+    width: 350px;
+    height: 35px;
+    margin-top: 25px;
+    border-radius: 50px;
+    background: #F9A65A;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
 
 
 @media screen and (max-width: 990px) {
