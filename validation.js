@@ -1,15 +1,18 @@
 
-function validationLogin(){
-    const email = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+// function validationLogin(){
+    
+//     const email = document.getElementById("username").value;
+//     const password = document.getElementById("password").value;
 
-    if(email === localStorage.getItem("email") && password === localStorage.getItem("password")){        
+//     if(email === "joel@gmail.com" && password === "12345"){        
         
-        alert("You are Login");
-    }else{
-        alert("Wrong credentials...");
-    }
-}
+//         window.location.assign("home.html");      
+//         alert("You are Login");
+//     }else{
+//         alert("Wrong credentials...");
+//         return;
+//     }
+// }
 
 
 
@@ -28,8 +31,15 @@ function validationRegister(){
     }else{                
         
         alert("Register successfully");
-        window.location.href = "index.html";
+        
     }
 }
 
 
+
+
+function logout(){
+    localStorage.removeItem("email");
+    localStorage.removeItem("password");
+    window.location.href = "index.html";
+}
