@@ -26,9 +26,9 @@ function validationRegister(){
     if(email === "" || password === ""  || fname === "" || lname === ""){
         alert("fill all the field before submitting")
     }else{                
-        window.location.href = "index.html";
-        // alert("Register successfully");
         
+        alert("Register successfully");
+        window.location.href = "index.html";
     }
 }
 
