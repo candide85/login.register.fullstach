@@ -12,8 +12,11 @@ function validationLogin(){
 }
 
 
+
 function validationRegister(){
+    
     const email = document.getElementById("email").value;
+    console.log(email);
     const password = document.getElementById("password").value;
     const emailStore = localStorage.setItem("email",email)
     const passwordStore = localStorage.setItem("password",password) 
@@ -23,7 +26,8 @@ function validationRegister(){
     if(email === "" || password === ""  || fname === "" || lname === ""){
         alert("fill all the field before submitting")
     }else{                
-        alert("Register successfully");
+        window.location.href = "index.html";
+        // alert("Register successfully");
         
     }
 }
